@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_athena_product_tree" model="ir.ui.view">
+        <field name="name">athena.product.tree</field>
+        <field name="model">athena.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="category"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_athena_product_form" model="ir.ui.view">
+        <field name="name">athena.product.form</field>
+        <field name="model">athena.product</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="category"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_athena_product_search" model="ir.ui.view">
+        <field name="name">athena.product.search</field>
+        <field name="model">athena.product</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="category"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_athena_product" model="ir.actions.act_window">
+        <field name="name">Athena Products</field>
+        <field name="res_model">athena.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create the first product
+            </p>
+        </field>
+    </record>
+</odoo>

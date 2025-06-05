@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="athena_main_menu" name="Athena" sequence="10" groups="athena_customer.group_athena_user"/>
+
+    <menuitem id="athena_customer_menu" name="Customers" parent="athena_main_menu"
+              action="athena_customer.action_athena_customer" sequence="10"
+              groups="athena_customer.group_athena_user"/>
+
+    <menuitem id="athena_product_menu" name="Products" parent="athena_main_menu"
+              action="athena_customer.action_athena_product" sequence="20"
+              groups="athena_customer.group_athena_manager"/>
+</odoo>
