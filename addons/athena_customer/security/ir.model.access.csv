@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_athena_product_manager,access.athena.product.manager,model_athena_product,athena_customer.group_athena_manager,1,1,1,1
+access_athena_customer_user,access.athena.customer.user,model_athena_customer,athena_customer.group_athena_user,1,1,1,1
+access_athena_customer_line_user,access.athena.customer.product.line.user,model_athena_customer_product_line,athena_customer.group_athena_user,1,1,1,1
